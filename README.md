@@ -350,3 +350,148 @@ s1.max()
 # Min number in a series
 s1.min()
 ```
+
+
+
+
+
+# LINEAR ALGEBRA
+
+
+```
+
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+
+v = [3,4]
+u = [1,2,3]
+
+
+w = np.array([9,5,7])
+
+
+w.shape[0]
+
+
+a = np.array([7,5,3,9,0,2])
+
+# accessing the first element
+a[0]
+
+# accessing complete elements
+a[1:]
+
+#accessing last element
+a[-1]
+
+
+# Plotting a vector
+
+v = [3,4]
+u = [1,2,3]
+plt.plot (v)
+
+
+# Plotting 2D vector
+
+plt.plot([0,v[0]] , [0,v[1]])
+plt.plot([8,-8] , [0,0] , 'k--')
+plt.plot([0,0] , [8,-8] , 'k--')
+plt.grid()
+plt.axis((-8, 8, -8, 8))
+plt.show()
+
+
+# Plotting 3D vector
+
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.plot([0,u[0]],[0,u[1]],[0,u[2]])
+plt.axis('equal')
+ax.plot([0, 0],[0, 0],[-5, 5],'k--')
+ax.plot([0, 0],[-5, 5],[0, 0],'k--')
+ax.plot([-5, 5],[0, 0],[0, 0],'k--')
+plt.show()
+
+
+#Vector Addition
+
+v1 = np.array([1,2])
+v2 = np.array([3,4])
+v3 = v1+v2
+v3 = np.add(v1,v2)
+print('V3 =' ,v3)
+plt.plot([0,v1[0]] , [0,v1[1]] , 'r' , label = 'v1')
+plt.plot([0,v2[0]] , [0,v2[1]], 'b' , label = 'v2')
+plt.plot([0,v3[0]] , [0,v3[1]] , 'g' , label = 'v3')
+plt.plot([8,-8] , [0,0] , 'k--')
+plt.plot([0,0] , [8,-8] , 'k--')
+plt.grid()
+plt.axis((-8, 8, -8, 8))
+plt.legend()
+plt.show()
+
+
+
+#Scalar Multiplication
+
+
+u1 = np.array([3,4])
+a = .5
+u2 = u1*a
+plt.plot([0,u1[0]] , [0,u1[1]] , 'r' , label = 'v1')
+plt.plot([0,u2[0]] , [0,u2[1]], 'b--' , label = 'v2')
+plt.plot([8,-8] , [0,0] , 'k--')
+plt.plot([0,0] , [8,-8] , 'k--')
+plt.grid()
+plt.axis((-8, 8, -8, 8))
+plt.legend()
+plt.show()
+
+a1 = [5 , 6 ,8]
+a2 = [4, 7 , 9]
+print(np.multiply(a1,a2))
+
+
+
+#Dot Product
+
+a1 = np.array([1,2,3])
+a2 = np.array([4,5,6])
+
+dotp = a1@a2
+print(" Dot product - ",dotp)
+
+
+
+#Cross Product
+
+v1 = np.array([1,2,3])
+v2 = np.array([4,5,6])
+print("\nVector Cross Product ==>  \n", np.cross(v1,v2))
+
+
+# Angle between vectors
+
+v1 = np.array([4,3])
+v2 = np.array([-3,4])
+lengthV1 = np.sqrt(np.dot(v1,v1)) 
+lengthV2  = np.sqrt(np.dot(v2,v2))
+ang = np.rad2deg(np.arccos( np.dot(v1,v2) / (lengthV1 * lengthV2)))
+print('Angle between Vectors - %s' %ang)
+
+
+
+#Length Of Vector 
+
+v3 = np.array([1,2,3,4,5,6])
+length = np.sqrt(np.dot(v3,v3))
+length
+
+v3 = np.array([1,2,3,4,5,6])
+length = np.sqrt(sum(np.multiply(v3,v3)))
+length
+```
