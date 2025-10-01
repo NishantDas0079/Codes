@@ -270,4 +270,83 @@ v2 = np.random.random(10)
 ind2 = np.arange(0,10)
 s = pd.Series(v2,ind2)
 v2 , ind2 , s
+
+
+# Creating Series from Dictionary
+dict1 = {'a1' :10 , 'a2' :20 , 'a3':30 , 'a4':40}
+s3 = pd.Series(dict1)
+s3
+
+
+
+pd.Series(99, index=[0, 1, 2, 3, 4, 5])
+
+
+s = [0,1,2,3,4,5,6,7,8,9,10]
+
+
+# Return all elements of the series
+s[:]
+
+
+# First three element of the Series
+s[0:3]
+
+# Last element of the Series
+s[-1:]
+
+
+# Fetch first 4 elements in a series
+s[:4]
+
+
+s2 = s1.copy()
+s2
+
+# Append S2 & S3 Series
+s4 = s2.append(s3)
+s4
+
+
+s4 = s4.append(pd.Series({'a4': 7}))
+s4
+
+
+v1 = np.array([10,20,30])
+v2 = np.array([1,2,3])
+s1 = pd.Series(v1) 
+s2 = pd.Series(v2)
+s1 , s2
+
+
+# Addition of two series
+s1.add(s2)
+
+
+# Subtraction of two series
+s1.sub(s2)
+
+
+# Increment all numbers in a series by 9
+s1.add(9)
+
+
+# Multiplication of two series
+s1.mul(s2)
+
+
+# Multiply each element by 1000
+s1.multiply(1000)
+
+
+# Division
+s1.divide(s2)
+
+
+# MAX number in a series
+s1.max()
+
+
+# Min number in a series
+s1.min()
 ```
