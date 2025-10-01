@@ -78,6 +78,132 @@ len(arr3)
 
 # Generate an array of zeros
 np.zeros(10)
+
+
+# Generate an array of ones with given shape
+np.ones(10)
+
+
+
+# Repeat 10 five times in an array
+np.repeat(10,5)
+
+
+
+# Repeat each element in array 'a' thrice
+a= np.array([10,20,30])
+np.repeat(a,3)
+
+
+# Generate array of Odd numbers
+ar1 = np.arange(1,20)
+ar1[ar1%2 ==1]
+
+
+# Generate array of even numbers
+ar1 = np.arange(1,20)
+ar1[ar1%2 == 0]
+
+
+
+# Create an array of random values
+np.random.random(4)
+
+
+# Generate an array of Random Integer numbers
+np.random.randint(0,500,5)
+
+
+
+arr2 = np.arange(1,20)
+arr2
+
+
+# Sum of all elements in an array
+arr2.sum()
+
+# Cumulative Sum
+np.cumsum(arr2)
+
+
+# Find Minimum number in an array
+arr2.min()
+
+
+#  Find MAX number in an array
+arr2.max()
+
+
+# Find mean of all numbers in an array
+arr2.mean()
+
+
+# Find median of all numbers present in arr2
+np.median(arr2)
+
+
+# Variance
+np.var(arr2)
+
+# Standard deviation
+np.std(arr2)
+
+
+# Calculating percentiles
+np.percentile(arr2,70)
+
+
+A = np.array([[1,2,3,0] , [5,6,7,22] , [10 , 11 , 1 ,13] , [14,15,16,3]])
+A
+
+
+# SUM of all numbers in a 2D array
+A.sum()
+
+# MAX number in a 2D array
+A.max()
+
+# Minimum
+A.min()
+
+
+# Enumerate for Numpy 2D Arrays
+for index, value in np.ndenumerate(A):
+    print(index, value)
+
+
+
+a = np.array([7,5,3,9,0,2])
+
+
+# Access first element of the array
+a[0]
+
+# Access all elements of Array except first one.
+a[1:]
+
+
+# Fetch 2nd , 3rd & 4th value from the Array
+a[1:4]
+
+
+# Get last element of the array
+a[-1]
+
+
+ar = np.arange(1,20)
+ar
+
+
+# Replace EVEN numbers with ZERO
+rep1 = np.where(ar % 2 == 0, 0 , ar)
+print(rep1)
+
+
+
+# Replace 10 with value 99
+rep2 = np.where(ar2 == 10, 99 , ar2)
+print(rep2)
 ```
 
 
