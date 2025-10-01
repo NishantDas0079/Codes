@@ -698,4 +698,16 @@ print("\n Matrix Addition using np.add  ==>  \n", C)
 
 C = np.subtract(M,N,dtype = np.float64)
 print("\n Matrix Subtraction using np.subtract  ==>  \n"
+
+
+
+
+# Matrix Scalar Multiplication
+
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+
+C = 10
+
+print("\nMatrices Scalar Multiplication ==>  \n", np.multiply(C,M))               
 ```
