@@ -206,6 +206,38 @@ print(rep1)
 # Replace 10 with value 99
 rep2 = np.where(ar2 == 10, 99 , ar2)
 print(rep2)
+
+
+
+p2 = np.arange(0,100,10)
+p2
+
+# Replace values at INDEX loc 0,3,5 with 33,55,99
+np.put(p2, [0, 3 , 5], [33, 55, 99])
+p2
+
+
+
+
+a = np.array([10, np.nan,20,30,60,np.nan,90,np.inf])
+a
+
+
+# Search for missing values and return as a boolean array
+np.isnan(a)
+
+
+# Index of missing values in an array
+np.where(np.isnan(a))
+
+
+# Replace all missing values with 99
+a[np.isnan(a)] = 99
+a
+
+
+# Check if array has any NULL value
+np.isnan(a).any()
 ```
 
 
