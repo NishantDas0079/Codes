@@ -1,3 +1,5 @@
+All the below codes have been tested today on Google Colab.
+
 # NUMPY BASIC CODES
 
 ```
@@ -209,7 +211,7 @@ print(rep2)
 
 
 
-# PANDAS 
+# PANDAS BASIC CODES
 
 
 ```
@@ -355,7 +357,7 @@ s1.min()
 
 
 
-# LINEAR ALGEBRA
+# LINEAR ALGEBRA BASIC CODES
 
 
 ```
