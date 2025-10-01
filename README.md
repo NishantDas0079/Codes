@@ -709,5 +709,47 @@ M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
 
 C = 10
 
-print("\nMatrices Scalar Multiplication ==>  \n", np.multiply(C,M))               
+print("\nMatrices Scalar Multiplication ==>  \n", np.multiply(C,M))
+
+
+
+# Matrix Transpose
+
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+
+print("\nTranspose of M ==>  \n", M.T)
+
+
+
+# Matrix Determinant
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+
+print("\n Matrix (M)  ==>  \n", M)
+
+print("\nDeterminant of M ==>  ", np.linalg.det(M))
+
+
+
+
+# Matrix Rank
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+
+print("\n Matrix (M)  ==>  \n", M)
+
+print("\nRank of M ==> ", np.linalg.matrix_rank(M))
+
+
+
+
+# Inverse of Matrix
+
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+
+print("\n Matrix (M)  ==>  \n", M)
+
+print("\nInverse of M ==> \n", np.linalg.inv(M))
 ```
