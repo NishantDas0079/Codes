@@ -607,4 +607,95 @@ length
 v3 = np.array([1,2,3,4,5,6])
 length = np.sqrt(sum(np.multiply(v3,v3)))
 length
+
+
+
+
+# Normalized Vector
+
+
+v1 = [2,3]
+length_v1 = np.sqrt(np.dot(v1,v1))
+norm_v1 = v1/length_v1
+length_v1 , norm_v1
+
+
+
+
+# Inner and Outer Product
+
+v1 = np.array([1,2,3])
+v2 = np.array([4,5,6])
+np.inner(v1,v2)
+
+print("\n Inner Product ==>  \n", np.inner(v1,v2))
+print("\n Outer Product ==>  \n", np.outer(v1,v2))
+
+
+
+
+# Matrix Creation
+
+A = np.array([[1,2,3,4] , [5,6,7,8] , [10 , 11 , 12 ,13] , [14,15,16,17]])
+A
+
+type(A)
+
+A.shape
+
+
+#Zero Matrix
+
+
+np.zeros(9).reshape(3,3)
+
+np.zeros((3,3))
+
+
+
+# Matrix of Ones
+
+np.ones(9).reshape(3,3)
+
+np.ones((3, 3))
+
+
+
+# Matrix with Random Number
+
+X = np.random.random((3,3))
+X
+
+
+
+# Identity Matrix
+
+
+I = np.eye(9)
+I
+
+
+
+# Diagonal Matrix :-
+
+D = np.diag([1,2,3,4,5,6,7,8])
+D
+
+
+
+# Matrix Addition
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+N = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
+C = np.add(M,N,dtype = np.float64)
+print("\n Matrix Addition using np.add  ==>  \n", C)
+
+
+
+# Matrix Subtraction
+
+
+C = np.subtract(M,N,dtype = np.float64)
+print("\n Matrix Subtraction using np.subtract  ==>  \n"
 ```
