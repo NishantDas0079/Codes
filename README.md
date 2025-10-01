@@ -383,6 +383,85 @@ s1.max()
 
 # Min number in a series
 s1.min()
+
+
+# Average
+s1.mean()
+
+
+# Median
+s1.median()
+
+
+# Standard Deviation
+s1.std()
+
+
+# Series comparison
+s1.equals(s2)
+
+
+s5 = pd.Series([1,1,2,2,3,3], index=[0, 1, 2, 3, 4, 5])
+s5
+
+s5.value_counts()
+
+
+
+# creating a dataframe
+df = pd.DataFrame()
+df
+
+
+# Create Dataframe using List
+lang = ['Java' , 'Python' , 'C' , 'C++']
+df = pd.DataFrame(lang)
+df
+
+
+
+# Add column in the Dataframe
+rating = [1,2,3,4]
+df[1] = rating
+df
+
+
+# Create Dataframe from Dictionary
+
+data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+
+df2 = pd.DataFrame(data)
+df3 = pd.DataFrame(data, index=['row1', 'row2'], columns=['a', 'b'])
+df4 = pd.DataFrame(data, index=['row1', 'row2'], columns=['a', 'b' ,'c'])
+df5 = pd.DataFrame(data, index=['row1', 'row2'], columns=['a', 'b' ,'c' , 'd'])
+
+
+
+
+dates = pd.date_range(start='2020-01-20', end='2020-01-26')
+dates
+
+
+
+dates = pd.date_range(start='2020-01-20', periods=7)
+dates
+
+
+M = np.random.random((7,7))
+M
+
+
+dframe = pd.DataFrame(M , index=dates)
+dframe
+
+
+
+# List Index
+dframe.index
+
+
+# List Column Names
+dframe.columns
 ```
 
 
