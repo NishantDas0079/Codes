@@ -238,6 +238,36 @@ a
 
 # Check if array has any NULL value
 np.isnan(a).any()
+
+
+
+# Stack arrays vertically
+a = np.zeros(20).reshape(2,-1)
+b = np.repeat(1, 20).reshape(2,-1)
+a b
+
+np.vstack([a,b])
+
+
+
+# Stack arrays horizontally
+
+np.hstack([a,b])
+np.hstack([a1,b1])
+
+
+
+# Common items between two arrays
+
+c1 = np.array([10,20,30,40,50,60])
+c2 = np.array([12,20,33,40,55,60])
+np.intersect1d(c1,c2)
+
+
+
+# Remove common elements of C1 & C2 array from C1
+
+np.setdiff1d(c1,c2)
 ```
 
 
