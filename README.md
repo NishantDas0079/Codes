@@ -799,4 +799,72 @@ M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
 print("\n Matrix (M)  ==>  \n", M)
 
 print("\nInverse of M ==> \n", np.linalg.inv(M))
+
+
+
+
+# Trace of Matrix
+
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+
+print("\n Matrix (M)  ==>  \n", M)
+
+print("\nTrace of M ==> ", np.trace(M))
+
+
+
+# Matrix Dot Product
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+N = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
+print("\n First Matrix (M)  ==>  \n", M)
+print("\n Second Matrix (N)  ==>  \n", N)
+
+print("\n Matrix Dot Product ==> \n", M@N)
+
+
+
+
+# Matrix Division
+M = np.array([[1,2,3],[4,-3,6],[7,8,0]])
+N = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
+print("\n First Matrix (M)  ==>  \n", M)
+print("\n Second Matrix (N)  ==>  \n", N)
+
+
+print("\n Matrix Division (M/N)   ==> \n", M/N)
+
+
+
+
+# Sum of all elements in Matrix
+N = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
+print("\n Matrix (N)  ==>  \n", N)
+
+
+print ("Sum of all elements in a Matrix  ==>")
+print (np.sum(N))
+
+
+
+# Column wise addition
+
+N = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
+print("\n Matrix (N)  ==>  \n", N)
+
+print ("Column-Wise summation ==> ")
+print (np.sum(N,axis=0))
+
+
+
+# Row Wise addition
+N = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
+print("\n Matrix (N)  ==>  \n", N)
+
+print ("Row-Wise summation  ==>")
+print (np.sum(N,axis=1))
 ```
