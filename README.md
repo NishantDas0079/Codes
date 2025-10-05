@@ -492,6 +492,23 @@ dframe.index
 
 # List Column Names
 dframe.columns
+
+
+# Datatype of each column
+dframe.dtypes
+
+
+
+
+col1 = np.linspace(10, 100, 30)
+col2 = np.random.randint(10,100,30)
+df10 = pd.DataFrame({"C1" : col1 , "C2" :col2})
+df10
+
+# Delete rows with index values 17,18,19
+
+df10 = df10.drop([17,18,19], axis=0)
+df10
 ```
 
 
