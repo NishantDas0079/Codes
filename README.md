@@ -1,5 +1,7 @@
 All the below codes have been tested today on Google Colab.
-
+```
+https://share.google/qAqU621grScG0OFpR
+```
 # NUMPY BASIC CODES
 
 ```
